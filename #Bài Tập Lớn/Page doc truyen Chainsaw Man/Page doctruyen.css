@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* thanh công cụ menu */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 7px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.5s;
+    z-index: 100;
+
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+a, p, h4, h2, h3, h1 {
+    color: white}
+
+body {
+    background: #130849;
+}
+
+header .dropDown li{
+    display: block;
+}
+
+header .dropDown
+{
+    position: absolute;
+    max-width:fit-content;
+    background-color: lightskyblue;
+    z-index: 999;
+    display: none;
+    border-radius: 5%;
+
+}
+
+
+
+header li:hover ul.dropDown{
+    display: block  ;
+}
+
+
+
+
+header .logo {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+}
+header .nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .nav-bar li {
+    margin: 10px;
+}
+header .nav-bar li a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+header .nav-bar li a:hover {
+    background: lightskyblue;
+    color: #23242a;
+    box-shadow: 0 0 10px lightskyblue;
+}
+header .action .searchBx {
+    padding: 5px;
+    margin: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+    border-radius: 5px;
+
+    float: left;
+}
+header .action .searchBx i {
+    font-size: 1.4rem;
+    margin: 5px;
+    color: #23242a;
+}
+header .action .searchBx input {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: #23242a;
+}
+header .action img {
+
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+
+
+/*  phan tieu de */
+ 
+.tieude{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction  : column;
+    align-items: center;
+    padding: 100px;
+}
+
+.tieude h1{
+    font-size: 40px;
+}
+
+.tieude h2{
+    font-size: 20px;
+    margin: 20px;
+}
+ .button {
+width: 100%;
+justify-content: center;
+padding: 20px;
+display: flex;
+}
+
+ .button a{
+    border: white solid 1px;
+    width: auto; height: auto;
+    padding: 10px;
+    text-align: center ;
+    display: block;
+}
+
+ .button a:hover {
+    background-color: white;
+    color: #000;
+}
+
+
+/* danhsach truyen tron button */
+div .DS li{
+    display: block;
+}
+div .DS
+{
+    position: absolute;
+    background-color: lightskyblue;
+    z-index: 999;
+    display: none;
+    height: 200px;
+    overflow: scroll;
+
+}
+div li:hover ul.DS{
+    display: block  ;
+}
+
+/* content */
+
+div.content {
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction  : column;
+    align-items: center;
+    padding: 20px;
+}
+
+.content img{
+width: 70%;
+
+}
+
+/* buttoncuoi */
+
+.buttoncuoi{
+    margin-bottom: 200px;
+}
+
+
+.lienhe{
+    width: 100%;
+    padding: 10px;
+}

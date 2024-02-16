@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* thanh công cụ menu */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 7px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.5s;
+    z-index: 100;
+
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+a, p, h4, h2, h3, h1 {
+    color: white}
+
+body {
+    background: #130849;
+}
+
+header .dropDown li{
+    display: block;
+}
+/* dùng potion để cho có cais drop */
+header .dropDown
+{
+    position: absolute;
+    max-width:fit-content;
+    background-color: lightskyblue;
+    z-index: 999;
+    display: none;
+    border-radius: 5%;
+
+}
+
+
+
+header li:hover ul.dropDown{
+    display: block  ;
+}
+
+
+
+
+header .logo {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+}
+header .nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .nav-bar li {
+    margin: 10px;
+}
+header .nav-bar li a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+header .nav-bar li a:hover {
+    background: lightskyblue;
+    color: #23242a;
+    box-shadow: 0 0 10px lightskyblue;
+}
+header .action .searchBx {
+    padding: 5px;
+    margin: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+    border-radius: 5px;
+
+    float: left;
+}
+header .action .searchBx i {
+    font-size: 1.4rem;
+    margin: 5px;
+    color: #23242a;
+}
+header .action .searchBx input {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: #23242a;
+}
+header .action img {
+
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+/*  */
+
+.newcomic   
+    {   margin: none;
+        padding: 80px 0 0 10px; 
+        height: 2000px;
+        width: 100%;
+        background-image: linear-gradient(0,  rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../Ảnh/IMG/BGnewcomic.png) ;
+    }
+
+.tieude
+{  display: flex;
+   position: block;
+   height: 20px;
+   width: 500px;
+   margin: 20px 20px 20px 20px; 
+   align-items: center;
+}
+
+.tieude h1 {font-size: 15px; }
+/* dịnhd dạng co cái icon phần đầu tiêu đề */
+.box {height: 20px; width: 10px; background-color: lightskyblue; border-radius: 4px; margin: 10px;}
+
+
+.danhsachtruyenmoi{
+    
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* ô truyện */
+.dstruyenmoi {
+    width: 180px;
+    border-radius: 10px;
+    margin: 20px 40px;
+
+    background: #2d3a87;
+    overflow: hidden;
+}
+.dstruyenmoi img {
+    width: 180px;
+    height: 160px;
+    object-fit: cover;
+}
+.dstruyenmoi .content {
+   padding: 10px;
+   text-align: center; 
+   width: 100%; 
+}
+.dstruyenmoi .content h3 {
+    margin: 10px 0;
+    color: #fbc531;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis
+
+
+}
+.dstruyenmoi .content h4 {
+    margin: 10px 0;
+}
+
+/* tạo hover cho ô truyệntruyện */
+.dstruyenmoi:hover {
+    box-shadow: 0px 0px 10px 10px #B0E0E6;
+}
+
+
+/* định dạng chuyeenr trang */
+.chuyentrang {
+width: 100%;
+justify-content: center;
+padding: 60px;
+display: flex;
+}
+.chuyentrang  ul{  display: flex;}
+.chuyentrang ul a {
+    border: white solid 1px;
+    width: 30px; height: 30px;
+    padding: 2px;
+    text-align: center  ;
+}
+.chuyentrang ul a:hover
+{
+    background-color: white;
+    color: #000;
+}
+
+.lienhe{
+    width: 100%;
+    padding: 10px;
+}
